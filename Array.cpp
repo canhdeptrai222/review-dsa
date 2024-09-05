@@ -132,11 +132,11 @@ void quickSortWithRecursion(int a[], int left, int right) {
 			l++;
 			r--;
 		}
-		if (left < r)
-			quickSortWithRecursion(a, left, r);
-		if (right > l)
-			quickSortWithRecursion(a, l, right);
 	}
+	if (left < r)
+		quickSortWithRecursion(a, left, r);
+	if (right > l)
+		quickSortWithRecursion(a, l, right);
 }
 
 int binarySearch(int a[], int n, int x) {
